@@ -11,14 +11,14 @@
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark navbar-dark" data-bs-theme="dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="<?php echo base_url(); ?>"><img src="<?php echo media(); ?>images/logo.png" alt="Logo" style="width:70px"></a>
+        <a class="navbar-brand" href="<?php echo base_url(); ?>/"><img src="<?php echo media(); ?>/images/logo.png" alt="Logo" style="width:70px"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="<?php echo base_url(); ?>productos">Productos</a>
+              <a class="nav-link active" aria-current="page" href="<?php echo base_url(); ?>/productos">Productos</a>
             </li>
           </ul>
           <form class="d-flex" role="search">
@@ -38,21 +38,21 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="<?=media();?>images/slide1.jpg" class="d-block w-100" style="object-fit:cover;height:450px" alt="Slide">
+          <img src="<?=media();?>/images/slide1.jpg" class="d-block w-100" style="object-fit:cover;height:450px" alt="Slide">
           <div class="carousel-caption d-none d-md-block">
             <h5>First slide label</h5>
             <p>Some representative placeholder content for the first slide.</p>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="<?=media();?>images/slide2.jpg" class="d-block w-100" style="object-fit:cover;height:450px" alt="Slide">
+          <img src="<?=media();?>/images/slide2.jpg" class="d-block w-100" style="object-fit:cover;height:450px" alt="Slide">
           <div class="carousel-caption d-none d-md-block">
             <h5>Second slide label</h5>
             <p>Some representative placeholder content for the second slide.</p>
           </div>
         </div>
         <div class="carousel-item">
-          <img src="<?=media();?>images/slide3.jpg" class="d-block w-100" style="object-fit:cover;height:450px" alt="Slide">
+          <img src="<?=media();?>/images/slide3.jpg" class="d-block w-100" style="object-fit:cover;height:450px" alt="Slide">
           <div class="carousel-caption d-none d-md-block">
             <h5>Third slide label</h5>
             <p>Some representative placeholder content for the third slide.</p>
