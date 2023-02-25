@@ -22,19 +22,19 @@ CREATE TABLE IF NOT EXISTS `categoria` (
 );
 
 -- INSERT INTO `categoria` (`idcategoria`, `nombre`, `descripcion`, `portada`, `datecreated`, `ruta`) VALUES
--- (1, 'Cardiología', 'Mantén un corazón saludable con nuestros productos de cardiología de alta calidad.', '', '', 'cardiología'),
--- (2, 'Resfriado', 'Alivia los síntomas del resfriado con nuestra amplia selección de productos efectivos.', '', '', 'resfriado'),
--- (3, 'Analgésicos', 'Alivia el dolor con nuestros analgésicos efectivos y seguros.', '', '', 'analgésicos'),
--- (4, 'Dermatología', '"Cuida tu piel con nuestros productos de dermatología de alta calidad.', '', '', 'dermatología'),
--- (5, 'Nutrición', '"Mejora tu nutrición con nuestra amplia selección de productos saludables y efectivos.', '', '', 'nutrición'),
--- (6, 'Neurología', '"Mantén tu sistema nervioso en óptimas condiciones con nuestros productos de neurología de alta calidad.', '', '', 'neurología'),
--- (7, 'Aleria', 'Alivia tus síntomas de alergia con nuestra amplia selección de productos efectivos y seguros.', '', '', 'aleria'),
--- (8, 'Oftalmología', 'Cuida tus ojos con nuestros productos de oftalmología de alta calidad.', '', '', 'oftalmología'),
--- (9, 'Hematología', 'Mantén tu sistema sanguíneo saludable con nuestros productos de hematología de alta calidad.', '', '', 'hematología'),
--- (10, 'Semillas', 'Cultiva tu propio jardín con nuestra amplia selección de semillas de alta calidad.', '', '', 'semillas'),
--- (11, 'Herbicidas', 'Controla las malas hierbas en tus cultivos con nuestra amplia selección de herbicidas efectivos y seguros.', '', '', 'herbicidas'),
--- (12, 'Insecticidas', 'Lucha contra las plagas con nuestros insecticidas efectivos y seguros.', '', '', 'insecticidas'),
--- (13, 'Fungicidas', 'Controla los hongos en tus cultivos con nuestros fungicidas efectivos y seguros.', '', '', 'fungicidas');
+ (1, 'Cardiología', 'Mantén un corazón saludable con nuestros productos de cardiología de alta calidad.', '', '', 'cardiología'),
+ (2, 'Resfriado', 'Alivia los síntomas del resfriado con nuestra amplia selección de productos efectivos.', '', '', 'resfriado'),
+ (3, 'Analgésicos', 'Alivia el dolor con nuestros analgésicos efectivos y seguros.', '', '', 'analgésicos'),
+ (4, 'Dermatología', '"Cuida tu piel con nuestros productos de dermatología de alta calidad.', '', '', 'dermatología'),
+ (5, 'Nutrición', '"Mejora tu nutrición con nuestra amplia selección de productos saludables y efectivos.', '', '', 'nutrición'),
+ (6, 'Neurología', '"Mantén tu sistema nervioso en óptimas condiciones con nuestros productos de neurología de alta calidad.', '', '', 'neurología'),
+ (7, 'Aleria', 'Alivia tus síntomas de alergia con nuestra amplia selección de productos efectivos y seguros.', '', '', 'aleria'),
+ (8, 'Oftalmología', 'Cuida tus ojos con nuestros productos de oftalmología de alta calidad.', '', '', 'oftalmología'),
+ (9, 'Hematología', 'Mantén tu sistema sanguíneo saludable con nuestros productos de hematología de alta calidad.', '', '', 'hematología'),
+ (10, 'Semillas', 'Cultiva tu propio jardín con nuestra amplia selección de semillas de alta calidad.', '', '', 'semillas'),
+ (11, 'Herbicidas', 'Controla las malas hierbas en tus cultivos con nuestra amplia selección de herbicidas efectivos y seguros.', '', '', 'herbicidas'),
+ (12, 'Insecticidas', 'Lucha contra las plagas con nuestros insecticidas efectivos y seguros.', '', '', 'insecticidas'),
+ (13, 'Fungicidas', 'Controla los hongos en tus cultivos con nuestros fungicidas efectivos y seguros.', '', '', 'fungicidas');
 
 -- PRODUCTO
 

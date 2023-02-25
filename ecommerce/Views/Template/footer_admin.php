@@ -6,6 +6,6 @@
     <!-- The javascript plugin to display page loading on top-->
     <script src="<?= media(); ?>/Admin/js/plugins/pace.min.js"></script>
     <!-- Page specific javascripts-->
-
+    <script type="text/javascript" src="<?= media();?>/Admin/js/functions_admin.js"></script>
   </body>
 </html>
