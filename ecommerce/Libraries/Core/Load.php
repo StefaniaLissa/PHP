@@ -11,11 +11,11 @@
 
 		}else{
 			require_once("Controllers/Error.php"); //No existe el método, devería haber uno llamado igual que su controlador
-			echo "Error: método o params";
+			//echo "Error: método o params";
 		}
 
 	}else{
 		require_once("Controllers/Error.php"); //Controlador no existe
-		echo "Error: controllador";
+		//echo "Error: controllador";
 	}
  ?>
