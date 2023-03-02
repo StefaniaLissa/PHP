@@ -9,6 +9,7 @@ class Clientes extends Controllers{
 		if(empty($_SESSION['login']))
 		{
 			header('Location: '.base_url().'/login');
+			die();
 		}
 		getPermisos(3);
 	}

@@ -1,7 +1,7 @@
     <!-- Sidebar menu-->
     <div class="app-sidebar__overlay" data-toggle="sidebar"></div>
     <aside class="app-sidebar">
-      <div class="app-sidebar__user"><img class="app-sidebar__user-avatar" src="<?= media();?>/Admin/images/avatar.png" alt="User Image">
+      <div class="app-sidebar__user"><img class="app-sidebar__user-avatar" src="<?= media();?>/images/avatar.png" alt="User Image">
         <div>
           <p class="app-sidebar__user-name"><?= $_SESSION['userData']['nombres']; ?></p>
           <p class="app-sidebar__user-designation"><?= $_SESSION['userData']['nombrerol']; ?></p>
@@ -54,14 +54,6 @@
             </ul>
         </li>
         <?php } ?>
-        <?php if(!empty($_SESSION['permisos'][5]['r'])){ ?>
-        <li>
-            <a class="app-menu__item" href="<?= base_url(); ?>/pedidos">
-                <i class="app-menu__icon fa fa-shopping-cart" aria-hidden="true"></i>
-                <span class="app-menu__label">Pedidos</span>
-            </a>
-        </li>
-         <?php } ?>
         <li>
             <a class="app-menu__item" href="<?= base_url(); ?>/logout">
                 <i class="app-menu__icon fa fa-sign-out" aria-hidden="true"></i>

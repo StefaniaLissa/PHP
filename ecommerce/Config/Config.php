@@ -3,9 +3,6 @@
 	const BASE_URL = "http://localhost/ecommerce";
 	//const BASE_URL = "http://pharmadam-es.espacioseguro.com/ecommerce";
 
-	//Zona horaria
-	//date_default_timezone_set('Europa/España');
-
 	//Datos de conexión a Base de Datos
 	// const DB_HOST = "hl1173.dinaserver.com";
 	// const DB_NAME = "pharmadam";
@@ -41,16 +38,16 @@
 	const NOMBRE_EMPESA = "Pharmadam";
 	const WEB_EMPRESA = "www.Pharmadam.com";
 
-	//Datos para mostrar categorías tienda virtual
+	//Datos para mostrar categorías tienda
 	const CAT_SLIDER = "1,2,3";
 	const CAT_BANNER = "4,5,6";
 	const CAT_FOOTER = "1,2,3,4,5";
 
 	// Datos para Encriptar / Desencriptar
-	const KEY = 'abelosh';
-	const METHODENCRIPT = "AES-128-ECB";
+	const KEY = 'dam';
+	const METHODENCRIPT = "AES-256-CTR";
 
 	//Envío
-	const COSTOENVIO = 25;
+	const COSTOENVIO = 50;
 
  ?>

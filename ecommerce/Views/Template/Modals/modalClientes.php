@@ -87,39 +87,39 @@
           <tbody>
             <tr>
               <td>Identificación:</td>
-              <td id="celIdentificacion"></td>
+              <td id="celIdentificacion">654654654</td>
             </tr>
             <tr>
               <td>Nombres:</td>
-              <td id="celNombre"></td>
+              <td id="celNombre">Jacob</td>
             </tr>
             <tr>
               <td>Apellidos:</td>
-              <td id="celApellido"></td>
+              <td id="celApellido">Jacob</td>
             </tr>
             <tr>
               <td>Teléfono:</td>
-              <td id="celTelefono"></td>
+              <td id="celTelefono">Larry</td>
             </tr>
             <tr>
               <td>Email (Usuario):</td>
-              <td id="celEmail"></td>
+              <td id="celEmail">Larry</td>
             </tr>
             <tr>
               <td>Identificación Tributaria:</td>
-              <td id="celIde"></td>
+              <td id="celIde">Larry</td>
             </tr>
             <tr>
               <td>Nombre Fiscal:</td>
-              <td id="celNomFiscal"></td>
+              <td id="celNomFiscal">Larry</td>
             </tr>
             <tr>
               <td>Dirección Fiscal:</td>
-              <td id="celDirFiscal"></td>
+              <td id="celDirFiscal">Larry</td>
             </tr>
             <tr>
               <td>Fecha registro:</td>
-              <td id="celFechaRegistro"></td>
+              <td id="celFechaRegistro">Larry</td>
             </tr>
           </tbody>
         </table>

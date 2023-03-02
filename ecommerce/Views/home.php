@@ -10,7 +10,7 @@
 			<div class="slick1">
 			<?php 
 			for ($i=0; $i < count($arrSlider) ; $i++) { 
-        $ruta = $arrSlider[$i]['ruta'];
+				$ruta = $arrSlider[$i]['ruta'];
 			 ?>
 				<div class="item-slick1" style="background-image: url(<?= $arrSlider[$i]['portada'] ?>);">
 					<div class="container h-full">
@@ -90,8 +90,8 @@
 			<hr>
 			<div class="row isotope-grid">
 			<?php 
-				for ($p=0; $p < count($arrProductos) ; $p++) { 
-          $rutaProducto = $arrProductos[$p]['ruta']; 
+				for ($p=0; $p < count($arrProductos) ; $p++) {
+					$rutaProducto = $arrProductos[$p]['ruta']; 
 					if(count($arrProductos[$p]['images']) > 0 ){
 						$portada = $arrProductos[$p]['images'][0]['url_image'];
 					}else{

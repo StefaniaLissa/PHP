@@ -4,9 +4,11 @@
 		public function __construct()
 		{
 			session_start();
+			session_regenerate_id(true);
 			if(isset($_SESSION['login']))
 			{
 				header('Location: '.base_url().'/dashboard');
+				die();
 			}
 			parent::__construct();
 		}
@@ -140,7 +142,7 @@
 						$arrResponseUser = $this->model->getUsuario($strEmail,$strToken);
 						if(empty($arrResponseUser)){
 							$arrResponse = array('status' => false, 
-											 'msg' => 'Error de datos.' );
+											 'msg' => 'Erro de datos.' );
 						}else{
 							$strPassword = hash("SHA256",$strPassword);
 							$requestPass = $this->model->insertPassword($intIdpersona,$strPassword);

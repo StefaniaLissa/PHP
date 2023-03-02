@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#009688">
-    <link rel="shortcut icon" href="<?= Admin/images/favicon.ico">
+    <link rel="shortcut icon" href="<?= media();?>/images/favicon.ico">
     <!-- Main CSS-->
-    <link rel="stylesheet" type="text/css" href="<?= Admin/css/main.css">
-    <link rel="stylesheet" type="text/css" href="<?= Admin/css/style.css">
+    <link rel="stylesheet" type="text/css" href="<?= media();?>/css/main.css">
+    <link rel="stylesheet" type="text/css" href="<?= media();?>/css/style.css">
     
     <title><?= $data['page_tag']; ?></title>
   </head>
@@ -23,7 +23,7 @@
       <div class="login-box flipped">
         <div id="divLoading" >
           <div>
-            <img src="<?= media(); ?>/Admin/images/loading.svg" alt="Loading">
+            <img src="<?= media(); ?>/images/loading.svg" alt="Loading">
           </div>
         </div>
         <form id="formCambiarPass" name="formCambiarPass" class="forget-form" action="">
@@ -47,14 +47,14 @@
         const base_url = "<?= base_url(); ?>";
     </script>
     <!-- Essential javascripts for application to work-->
-    <script src="<?= media(); ?>/Admin/js/jquery-3.3.1.min.js"></script>
-    <script src="<?= media(); ?>/Admin/js/popper.min.js"></script>
-    <script src="<?= media(); ?>/Admin/js/bootstrap.min.js"></script>
-    <script src="<?= media(); ?>/Admin/js/fontawesome.js"></script>
-    <script src="<?= media(); ?>/Admin/js/main.js"></script>
+    <script src="<?= media(); ?>/js/jquery-3.3.1.min.js"></script>
+    <script src="<?= media(); ?>/js/popper.min.js"></script>
+    <script src="<?= media(); ?>/js/bootstrap.min.js"></script>
+    <script src="<?= media(); ?>/js/fontawesome.js"></script>
+    <script src="<?= media(); ?>/js/main.js"></script>
     <!-- The javascript plugin to display page loading on top-->
-    <script src="<?= media(); ?>/Admin/js/plugins/pace.min.js"></script>
-    <script type="text/javascript" src="<?= Admin/js/plugins/sweetalert.min.js"></script>
-    <script src="<?= media(); ?>/Admin/js/<?= $data['page_functions_js']; ?>"></script>
+    <script src="<?= media(); ?>/js/plugins/pace.min.js"></script>
+    <script type="text/javascript" src="<?= media();?>/js/plugins/sweetalert.min.js"></script>
+    <script src="<?= media(); ?>/js/<?= $data['page_functions_js']; ?>"></script>
   </body>
 </html>

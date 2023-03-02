@@ -6,7 +6,7 @@
   <div class="row user">
     <div class="col-md-12">
       <div class="profile">
-        <div class="info"><img class="user-img" src="<?= media();?>/Admin/images/avatar.png">
+        <div class="info"><img class="user-img" src="<?= media();?>/images/avatar.png">
           <h4><?= $_SESSION['userData']['nombres'].' '.$_SESSION['userData']['apellidos']; ?></h4>
           <p><?= $_SESSION['userData']['nombrerol']; ?></p>
         </div>

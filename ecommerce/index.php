@@ -1,29 +1,32 @@
 <?php 
 	require_once("Config/Config.php");
 	require_once("Helpers/Helpers.php");
+	$url = !empty($_GET['url']) ? $_GET['url'] : 'home/home';
+	$arrUrl = explode("/", $url);
+	$controller = $arrUrl[0];
+	$method = $arrUrl[0];
+	$params = "";
 
-	$url = $_GET['url'] ?? 'home/home'; //Si no hay parametros ($_GET['url'] = null), 
-	//se utiliza en controlador home y el método home (localhost/ecommerce/home/home).
+	if(!empty($arrUrl[1]))
+	{
+		if($arrUrl[1] != "")
+		{
+			$method = $arrUrl[1];	
+		}
+	}
 
-	$arrUrl = explode("/", $url); //$arrUrl, array con todos los parametros, "/" es el delimitador
-	
-	$controller = $arrUrl[0]; //El 1º parametro SIEMPRE es un controlador
+	if(!empty($arrUrl[2]))
+	{
+		if($arrUrl[2] != "")
+		{
+			for ($i=2; $i < count($arrUrl); $i++) {
+				$params .=  $arrUrl[$i].',';
+				# code...
+			}
+			$params = trim($params,',');
+		}
+	}
+	require_once("Libraries/Core/Autoload.php");
+	require_once("Libraries/Core/Load.php");
 
-	$method = $arrUrl[1] ?? $arrUrl[0]; //Si no hay 2º parametro/método, toma el valor del controller. 
-    //Todos los controllers van a tener un método llamado como el mismo
-	
-    $params = implode(',', array_slice($arrUrl, 2)); //Toma los parametros restantes, los convierte en un array (array_slice)
-    //Une los elementos del array en una cadena separados por comas.
-
-    //PRUEBAS
-    // echo $arrUrl;
-    // echo $controller;
-    // echo $method;
-    // echo $params;
-    // echo "controlador: {$controller}<br>método: {$method}<br>parámetros: {$params}";
-    //Si las pruebas dan bien, probablemente sean las importaciones (require_once)s
-
-    require_once("Libraries/Core/Autoload.php");    //Importa todo lo necesario automáticamente
-	require_once("Libraries/Core/Load.php");        //cargara el controlador buscado con el método y params
  ?>
-

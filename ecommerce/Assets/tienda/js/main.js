@@ -211,7 +211,7 @@
     $('.js-hide-sidebar').on('click',function(){
         $('.js-sidebar').removeClass('show-sidebar');
     });
-    
+
     /*==================================================================
     [ Rating ]*/
     $('.wrap-rating').each(function(){

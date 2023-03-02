@@ -38,7 +38,6 @@
 				$arrPermisoRol['modulos'] = $arrModulos;
 				$html = getModal("modalPermisos",$arrPermisoRol);
 				//dep($arrPermisoRol);
-
 			}
 			die();
 		}
