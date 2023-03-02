@@ -101,7 +101,7 @@ ALTER TABLE `persona`
   ADD CONSTRAINT `persona_ibfk_1` FOREIGN KEY (`rolid`) REFERENCES `rol` (`idrol`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 INSERT INTO `persona` (`idpersona`, `identificacion`, `nombres`, `apellidos`, `telefono`, `email_user`, `password`, `nit`, `nombrefiscal`, `direccionfiscal`, `token`, `rolid`, `datecreated`, `status`) VALUES
-(1, '7897987987', 'DAM', 'DAM', 78454121, 'DAM@info.com', 'ef797c8118f02dfb649607dd5d3f8c7623048c9c063d532cc95c5ed7a898a64f', '', '', '', '', 1, '2023-02-13 00:51:44', 1);
+(1, '7897987987', 'DAM', 'DAM', 78454121, 'dam@info.com', 'ef797c8118f02dfb649607dd5d3f8c7623048c9c063d532cc95c5ed7a898a64f', '', '', '', '', 1, '2023-02-13 00:51:44', 1);
 
 -- MODULO
 

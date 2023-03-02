@@ -40,6 +40,17 @@
 	const EMAIL_REMITENTE = "no-reply@Pharmadam.com";
 	const NOMBRE_EMPESA = "Pharmadam";
 	const WEB_EMPRESA = "www.Pharmadam.com";
-		
+
+	//Datos para mostrar categorías tienda virtual
+	const CAT_SLIDER = "1,2,3";
+	const CAT_BANNER = "4,5,6";
+	const CAT_FOOTER = "1,2,3,4,5";
+
+	// Datos para Encriptar / Desencriptar
+	const KEY = 'abelosh';
+	const METHODENCRIPT = "AES-128-ECB";
+
+	//Envío
+	const COSTOENVIO = 25;
 
  ?>
