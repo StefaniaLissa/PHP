@@ -1,0 +1,36 @@
+<html>
+<head>
+<META CHARSET="UTF-8"/>
+	<title align="center">Formulario de la Factura</title>	
+</head>
+<body>
+    <a href="http://pharmadam.es/compras/php/FacturasTablas.php" >Volver</a>
+    <h1 align="center">Formulario de la Factura</h1>
+    <form action="../php/formularioFactura.php" method="get">
+    <fieldset  style="border-color:gray">
+        <legend style="color:blue">Datos generales de la factura</legend><br>
+        Nombre Proveedor: <input type="text" placeholder="Escribe aqui el nombre proveedor..." name="nombreProveedor" size="30" required><br><br>
+        Precio Total: <input type="text" placeholder="Escribe aqui..."  name="precioTotal" size="10" required><br><br>
+    </fieldset>
+    <br><br>
+    <fieldset  style="border-color:gray"><br>
+        <legend style="color:blue">Ingreso de productos</legend>
+        ID producto: <input type="text" placeholder="Escribe aqui el id..." name="idProducto1" size="20" required>
+        Cantidad: <input type="text" placeholder="Escribe aqui..."  name="cantidad1" size="10" required>  
+        Precio Unitario: <input type="text" placeholder="Escribe aqui..."  name="precioU1" size="10" required><br><br>
+        ID producto: <input type="text" placeholder="Escribe aqui el id..." name="idProducto2" size="20" required>
+        Cantidad: <input type="text" placeholder="Escribe aqui..."  name="cantidad2" size="10" required>  
+        Precio Unitario: <input type="text" placeholder="Escribe aqui..."  name="precioU2" size="10" required><br><br>
+        ID producto: <input type="text" placeholder="Escribe aqui el id..." name="idProducto3" size="20" required>
+        Cantidad: <input type="text" placeholder="Escribe aqui..."  name="cantidad3" size="10" required>  
+        Precio Unitario: <input type="text" placeholder="Escribe aqui..."  name="precioU3" size="10" required><br><br>
+    
+    </fieldset>
+    <br><br>
+    <fieldset style="border-color:gray">
+        <legend style="color:blue">Confirmar pedido</legend><br>
+        NOMBRE DEL TRABAJADOR: <input type="text" placeholder="Escribe aqui el nombre..." name="nombreTrabajador" size="20" required><br>
+        <p><input type="submit" value="Enviar"><input type="reset" value="Borrar"></p>
+    </fieldset>
+</body>
+</html>

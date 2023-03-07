@@ -148,7 +148,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-} 
+}
 .prevImage img{
 	width: 100%;
 }
@@ -177,7 +177,7 @@
 	margin: 10px;
 }
 
-/* TIENDA */
+/* TIENDA VIRTUAL */
 .divmetodpago label{
 	width: 100%;
 	display: flex;

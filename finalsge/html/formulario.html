@@ -1,0 +1,26 @@
+<html>
+<head>
+<META CHARSET="UTF-8"/>
+	<title align="center">Formulario de compra</title>	
+</head>
+<body>
+    <a href="http://pharmadam.es/compras/php/OrdenCompraTabla.php" >Volver</a>
+    <h1 align="center">Formulario de compra</h1>
+    <form action="../php/formulario.php" method="get">
+    <fieldset  style="border-color:gray">
+        <legend style="color:blue">Ingreso de productos</legend>
+        ID PRODUCTO: <input type="text" placeholder="Escribe aqui el id..." name="idProducto1" size="20" required>
+        Cantidad: <input type="text" placeholder="Escribe aqui..."  name="cantidad1" size="10" required><br>
+        ID PRODUCTO: <input type="text" placeholder="Escribe aqui el id..." name="idProducto2" size="20" required>
+        Cantidad: <input type="text" placeholder="Escribe aqui..."  name="cantidad2" size="10" required><br>
+        ID PRODUCTO: <input type="text" placeholder="Escribe aqui el id..." name="idProducto3" size="20" required>
+        Cantidad: <input type="text" placeholder="Escribe aqui..."  name="cantidad3" size="10" required><br>
+    </fieldset>
+    <br><br>
+    <fieldset style="border-color:gray">
+        <legend style="color:blue">Confirmar pedido</legend>
+        NOMBRE DEL TRABAJADOR: <input type="text" placeholder="Escribe aqui el nombre..." name="nombreTrabajador" size="20" required><br>
+        <p><input type="submit" value="Enviar"><input type="reset" value="Borrar"></p>
+    </fieldset>
+</body>
+</html>

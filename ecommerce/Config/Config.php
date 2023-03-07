@@ -1,19 +1,19 @@
 <?php 
 
-	const BASE_URL = "http://localhost/ecommerce";
-	//const BASE_URL = "http://pharmadam-es.espacioseguro.com/ecommerce";
+	//const BASE_URL = "http://localhost/ecommerce";
+	const BASE_URL = "http://pharmadam.es/ecommerce";
 
 	//Datos de conexión a Base de Datos
-	// const DB_HOST = "hl1173.dinaserver.com";
-	// const DB_NAME = "pharmadam";
-	// const DB_USER = "sge";
-	// const DB_PASSWORD = "DAM2v2023!";
+	 const DB_HOST = "hl1173.dinaserver.com";
+	 const DB_NAME = "pharmadam";
+	 const DB_USER = "sge";
+	 const DB_PASSWORD = "DAM2v2023!";
 
-	const DB_HOST = "localhost";
-	const DB_NAME = "db_tiendavirtual";
-	const DB_USER = "root";
-	const DB_PASSWORD = "";
-	const DB_CHARSET = "utf8";
+	// const DB_HOST = "localhost";
+	// const DB_NAME = "db_tiendavirtual";
+	// const DB_USER = "root";
+	// const DB_PASSWORD = "";
+	// const DB_CHARSET = "utf8";
 
 	//Deliminadores decimal y millar Ej. 10.000,00
 	const SPD = ",";
