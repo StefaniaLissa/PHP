@@ -18,7 +18,7 @@ require 'header.php'; ?>
         // Mostrar la tabla de campañas
         echo '<table>';
         echo '<thead><tr><th>ID</th><th>Nombre</th><th>Descripción</th><th>Fecha Inicio</th><th>Fecha Fin</th><th>Presupuesto</th><th>Estado</th><th>Acciones</th></tr></thead>';
-        echo '<tbody>';
+        echo '<tbody id="tabla-campanas">';
         while ($fila = $consulta->fetch(PDO::FETCH_ASSOC)) {
             echo '<tr>';
             echo '<td>'.$fila['ID'].'</td>';
@@ -101,28 +101,36 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $stmt->bindParam(':estado', $estado);
     $stmt->execute();
 
-    header("Location: campanas.php");
+    // obtener el ID de la última campaña insertada
+    $nueva_campana_id = $conn->lastInsertId();
 
-    // Obtener el ID de la campaña recién agregada
-$id_nueva_campana = $conn->lastInsertId();
+    // obtener la información de la nueva campaña de la base de datos
+    $sql = "SELECT * FROM Campañas WHERE ID = :id";
+    $consulta = $conn->prepare($sql);
+    $consulta->bindParam(':id', $nueva_campana_id);
+    $consulta->execute();
+    $nueva_campana = $consulta->fetch(PDO::FETCH_ASSOC);
 
-// Crear la nueva fila de la tabla
-$nueva_fila = '<tr id="fila_'.$id_nueva_campana.'">';
-$nueva_fila .= '<td>'.$id_nueva_campana.'</td>';
-$nueva_fila .= '<td>'.$nombre.'</td>';
-$nueva_fila .= '<td>'.$descripcion.'</td>';
-$nueva_fila .= '<td>'.$fecha_inicio.'</td>';
-$nueva_fila .= '<td>'.$fecha_fin.'</td>';
-$nueva_fila .= '<td>'.$presupuesto.'</td>';
-$nueva_fila .= '<td>'.$estado.'</td>';
-$nueva_fila .= '<td>';
-$nueva_fila .= '<button onclick="editarCampana('.$id_nueva_campana.')">Editar</button>';
-$nueva_fila .= '<button onclick="eliminarCampana('.$id_nueva_campana.')">Eliminar</button>';
-$nueva_fila .= '</td>';
-$nueva_fila .= '</tr>';
+    // construir la nueva fila de la tabla HTML
+    $nueva_fila = '<tr>';
+    $nueva_fila .= '<td>'.$nueva_campana['ID'].'</td>';
+    $nueva_fila .= '<td>'.$nueva_campana['Nombre'].'</td>';
+    $nueva_fila .= '<td>'.$nueva_campana['Descripción'].'</td>';
+    $nueva_fila .= '<td>'.$nueva_campana['Fecha Inicio'].'</td>';
+    $nueva_fila .= '<td>'.$nueva_campana['Fecha Fin'].'</td>';
+    $nueva_fila .= '<td>'.$nueva_campana['Presupuesto'].'</td>';
+    $nueva_fila .= '<td>'.$nueva_campana['Estado'].'</td>';
+    $nueva_fila .= '<td>';
+    $nueva_fila .= '<button>Editar</button>';
+    $nueva_fila .= '<button>Eliminar</button>';
+    $nueva_fila .= '</td>';
+    $nueva_fila .= '</tr>';
 
-// Agregar la nueva fila a la tabla existente
-echo '<script>document.querySelector("table tbody").insertAdjacentHTML("beforeend", "'.$nueva_fila.'");</script>';
+
+    echo '<script>';
+    echo 'var tabla = document.getElementById("tabla-campanas");';
+    echo 'tabla.insertAdjacentHTML("beforeend", "'.$nueva_fila.'");';
+    echo '</script>';
 
 }
 ?>
